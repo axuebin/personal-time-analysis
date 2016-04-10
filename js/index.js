@@ -22,6 +22,7 @@ function add(){
 	if(readTmp+codeTmp+eatTmp+gameTmp+sportTmp+otherTmp!=24){
 		alert("请确认您输入的时间总和为24小时！")
 	}else{
+		alert("添加成功，请输入下一条记录！")
 		readTime.push(readTmp);
 	    codeTime.push(codeTmp);
 	    eatTime.push(eatTmp);
