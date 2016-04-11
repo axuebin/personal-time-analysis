@@ -37,20 +37,21 @@ function avg(arr){
 }
 
 function display() {
-		$('#chart').css({
+	var pie_option=null;
+	$('#chart').css({
         	height: $("#layui-layer1").height(),
         	width: $("#layui-layer1").width(),
     	});
-
-    	var read=avg(readTime);
+	var pie_chart = echarts.init(document.getElementById('chart'));
+	if(pie_option){
+		pie_chart.setOption(pie_option);
+	}else{
+		var read=avg(readTime);
     	var code=avg(codeTime);
     	var eat=avg(eatTime);
     	var game=avg(gameTime);
     	var sport=avg(sportTime);
     	var other=avg(otherTime);
-
-    	var pie_chart = echarts.init(document.getElementById('chart'));
-
     	pie_option = {
         	title: {
             	text: '你的时间比例~',
@@ -93,5 +94,6 @@ function display() {
 	        ]
 	    };
 	    pie_chart.setOption(pie_option);
+	}
 }
 
