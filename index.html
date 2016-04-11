@@ -12,48 +12,64 @@ and open the template in the editor.
         <script type="text/javascript" src="js/echarts.common.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/amazeui.js"></script>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/amazeui.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="container">
-            <strong>请输入时间：</strong>
-            <p>使用须知：禁止刷新页面</p><p>因为只是静态页面，没用到数据库啦，一刷新页面就清空之前的输入啦~</p>
-            <p>每输入完一次点一下提交哦~</p>
-            <table>
-                <tr>
-                    <td>内容</td>
-                    <td>时间</td>
-                </tr>
-                <tr>
-                    <td>看  书</td>
-                    <td><input type="text" name="reading" id="reading"></td>
-                </tr>
-                <tr>
-                    <td>撸代码</td>
-                    <td><input type="text" name="coding" id="coding"></td>
-                </tr>
-                <tr>
-                    <td>吃饭</td>
-                    <td><input type="text" name="eating" id="eating"></td>
-                </tr>
-                <tr>
-                    <td>打游戏</td>
-                    <td><input type="text" name="game" id="game"></td>
-                </tr>
-                <tr>
-                    <td>运动</td>
-                    <td><input type="text" name="sporting" id="sporting"></td>
-                </tr>
-                <tr>
-                    <td>其它</td>
-                    <td><input type="text" name="other" id="other"></td>
-                </tr>
-            </table>
-            <br></br>
-            <button class=" button" onclick="add()">提交</button>
-            <br></br>
-            <button class=" button" onclick="display()">生成饼状图</button>
+        <div class="am-container">
+            <h1 class="am-sans-serif">时间可视化分析平台</h1>
         </div>
-        <div class="chart" id="chart"></div>
+        <div class="am-g doc-am-g">
+            <div class="am-u-sm-8 am-u-md-6 am-u-lg-6">
+                <strong>请输入时间：</strong>
+                <p>使用须知：禁止刷新页面</p><p>因为只是静态页面，没用到数据库啦，一刷新页面就清空之前的输入啦~</p>
+                <p>每输入完一次点一下提交哦~</p>
+                <table class="am-table am-table-bordered ">
+                    <thead>
+                        <tr>
+                            <td>内容</td>
+                            <td>时间</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>看  书</td>
+                            <td><input type="text" name="reading" id="reading"></td>
+                        </tr>
+                        <tr>
+                            <td>撸代码</td>
+                            <td><input type="text" name="coding" id="coding"></td>
+                        </tr>
+                        <tr>
+                            <td>吃饭</td>
+                            <td><input type="text" name="eating" id="eating"></td>
+                        </tr>
+                        <tr>
+                            <td>打游戏</td>
+                            <td><input type="text" name="game" id="game"></td>
+                        </tr>
+                        <tr>
+                            <td>运动</td>
+                            <td><input type="text" name="sporting" id="sporting"></td>
+                        </tr>
+                        <tr>
+                            <td>其它</td>
+                            <td><input type="text" name="other" id="other"></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                <br></br>
+                <!--<input type="file" class="am-btn am-btn-primary"> 
+                <br></br>-->
+                <button type="button" class="am-btn am-btn-primary" onclick="add()">提交</button>
+                <button type="button" class="am-btn am-btn-primary" onclick="display()">生成饼状图</button>
+            </div>
+            
+            <div class="am-u-sm-4 am-u-md-6 am-u-lg-6">
+                <div class="chart" id="chart"></div>
+            </div>
+        </div>
     </body>
 </html>
