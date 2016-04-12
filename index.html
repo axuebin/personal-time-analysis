@@ -20,7 +20,7 @@ and open the template in the editor.
 
     <script>
         function alertDiv(){
-            if(readTime==0&&codeTime==0&&eatTime==0&&gameTime==0&&sportTime==0&&sportTime==0){
+            if(firstTime==0&&secondTime==0&&thirdTime==0&&fourthTime==0&&fifthTime==0&&sixthTime==0){
                 alert("请您输入时间！")
             }else{
                 var useragent = navigator.userAgent;  
@@ -55,9 +55,10 @@ and open the template in the editor.
         </div>
         <div class="main">
             <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
-                <strong>请输入时间：</strong>
-                <p>使用须知：禁止刷新页面</p><p>因为只是静态页面，没用到数据库啦，一刷新页面就清空之前的输入啦~</p>
-                <p>每输入完一次点一下提交哦~</p>
+                <strong>使用须知</strong>
+                <p>禁止刷新页面（因为只是静态页面，没用到数据库啦，一刷新页面就清空之前的输入啦~）</p>
+                <p>每输入完一次点一下提交</p>
+                <p>默认的内容项可以编辑的，每次提交内容要一致哦~</p>
                 <table id="table" class="am-table am-table-bordered ">
                     <thead>
                         <tr>
@@ -67,28 +68,28 @@ and open the template in the editor.
                     </thead>
                     <tbody>
                         <tr>
-                            <td>看  书</td>
-                            <td><input type="text" name="reading" id="reading"></td>
+                            <td><input type="text" name="Text" value="吃饭" id="firstText"></td>
+                            <td><input type="text" name="Time" id="firstTime"></td>
                         </tr>
                         <tr>
-                            <td>撸代码</td>
-                            <td><input type="text" name="coding" id="coding"></td>
+                            <td><input type="text" name="Text" value="学习" id="secondText"></td>
+                            <td><input type="text" name="Time" id="secondTime"></td>
                         </tr>
                         <tr>
-                            <td>吃饭</td>
-                            <td><input type="text" name="eating" id="eating"></td>
+                            <td><input type="text" name="Text" value="运动" id="thirdText"></td>
+                            <td><input type="text" name="Time" id="thirdTime"></td>
                         </tr>
                         <tr>
-                            <td>打游戏</td>
-                            <td><input type="text" name="game" id="game"></td>
+                            <td><input type="text" name="Text" value="娱乐" id="fourthText"></td>
+                            <td><input type="text" name="Time" id="fourthTime"></td>
                         </tr>
                         <tr>
-                            <td>运动</td>
-                            <td><input type="text" name="sporting" id="sporting"></td>
+                            <td><input type="text" name="Text" value="睡觉" id="fifthText"></td>
+                            <td><input type="text" name="Time" id="fifthTime"></td>
                         </tr>
                         <tr>
-                            <td>其它</td>
-                            <td><input type="text" name="other" id="other"></td>
+                            <td><input type="text" name="Text" value="其他" id="sixthText"></td>
+                            <td><input type="text" name="Time" id="sixthTime"></td>
                         </tr>
                     </tbody>
                     

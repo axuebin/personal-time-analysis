@@ -262,6 +262,7 @@ button {
 button,
 input {
   line-height: normal;
+  text-align: center;
 }
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
