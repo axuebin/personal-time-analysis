@@ -27,6 +27,7 @@ body {
  *    https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
  */
 html {
+  background-image: url(http://www.51pptmoban.com/d/file/2014/05/13/5124ee28759d3dcb61d04179ac509568.jpg);
   -ms-text-size-adjust: 100%;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -36,6 +37,7 @@ html {
  * Remove default margin.
  */
 body {
+
   margin: 0;
 }
 /* HTML5 display definitions
@@ -261,6 +263,8 @@ button {
  */
 button,
 input {
+  background:#fff;
+  border:1px solid #999；
   line-height: normal;
   text-align: center;
 }
@@ -375,7 +379,7 @@ optgroup {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-
+  width: 80%; 
 }
 td,
 th {
@@ -1738,8 +1742,6 @@ fieldset[disabled] .am-btn-default.am-active {
 }
 .am-btn-primary {
   width:49%;
-  float: left;
-  margin: 1px;
   color: #fff;
   background-color: #0e90d2;
   border-color: #0e90d2;
@@ -2080,6 +2082,7 @@ th {
   border-top: 1px solid #ddd;
 }
 .am-table > thead > tr > th {
+  text-align: center;
   vertical-align: bottom;
   border-bottom: 1px solid #ddd;
 }

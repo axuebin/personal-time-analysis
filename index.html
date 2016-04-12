@@ -51,54 +51,51 @@ and open the template in the editor.
     </script>
     <body>
         <div class="am-container">
-            <h1 class="am-sans-serif">时间可视化分析平台</h1>
+            <h1 style="font-family:'楷体';">时间可视化分析平台</h1>
         </div>
         <div class="main">
             <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
-                <strong>使用须知</strong>
-                <p>禁止刷新页面（因为只是静态页面，没用到数据库啦，一刷新页面就清空之前的输入啦~）</p>
-                <p>每输入完一次点一下提交</p>
-                <p>默认的内容项可以编辑的，每次提交内容要一致哦~</p>
+                <h2>使用须知</h2>
+                <p>禁止刷新页面（尚未完善~）</p>
+                <p>每输入完一次点一下提交哦~</p>
+                <p>还存在一个小bug：每次生成图表后需要重新刷新页面才能再次生成图表。。。</p>
                 <table id="table" class="am-table am-table-bordered ">
                     <thead>
                         <tr>
-                            <td>内容</td>
-                            <td>时间</td>
+                            <th>项目</th>
+                            <th>时间</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><input type="text" name="Text" value="吃饭" id="firstText"></td>
-                            <td><input type="text" name="Time" id="firstTime"></td>
+                            <td><input type="text" name="Time" value="4" id="firstTime"></td>
                         </tr>
                         <tr>
                             <td><input type="text" name="Text" value="学习" id="secondText"></td>
-                            <td><input type="text" name="Time" id="secondTime"></td>
+                            <td><input type="text" name="Time" value="4" id="secondTime"></td>
                         </tr>
                         <tr>
                             <td><input type="text" name="Text" value="运动" id="thirdText"></td>
-                            <td><input type="text" name="Time" id="thirdTime"></td>
+                            <td><input type="text" name="Time" value="4" id="thirdTime"></td>
                         </tr>
                         <tr>
                             <td><input type="text" name="Text" value="娱乐" id="fourthText"></td>
-                            <td><input type="text" name="Time" id="fourthTime"></td>
+                            <td><input type="text" name="Time" value="4" id="fourthTime"></td>
                         </tr>
                         <tr>
                             <td><input type="text" name="Text" value="睡觉" id="fifthText"></td>
-                            <td><input type="text" name="Time" id="fifthTime"></td>
+                            <td><input type="text" name="Time" value="4" id="fifthTime"></td>
                         </tr>
                         <tr>
                             <td><input type="text" name="Text" value="其他" id="sixthText"></td>
-                            <td><input type="text" name="Time" id="sixthTime"></td>
+                            <td><input type="text" name="Time" value="4" id="sixthTime"></td>
                         </tr>
                     </tbody>
                     
                 </table>
-                <br></br>
-                <!--<input type="file" class="am-btn am-btn-primary"> 
-                <br></br>-->
-                <button class="am-btn am-btn-primary" onclick="add()">提交</button>
-                <button id="display" class="am-btn am-btn-primary" onclick="alertDiv()">生成饼状图</button>
+                <button class="am-btn am-btn-primary" style="float:left;" onclick="add()">提交</button>
+                <button id="display" class="am-btn am-btn-primary" style="float:right;" onclick="alertDiv()">生成饼状图</button>
             </div>
             
             
